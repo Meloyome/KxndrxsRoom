@@ -1,0 +1,120 @@
+body{
+    font-family: 'Medodica';
+    background-image: url('images/background.png');
+}
+
+@keyframes moveSlightly {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(2px, 3px); }
+  100% { transform: translate(0, 0); }
+}
+
+@font-face{
+    font-family: 'Medodica';
+    src: url('Fonts/MedodicaRegular.otf');
+}
+
+.window{
+    border-radius:5px;background: #A8A6BA;
+    padding-top: 50px;
+    background: linear-gradient(180deg,rgb(200, 191, 207) .5%, rgb(221, 213, 223) 1%, rgb(152, 147, 156));
+    margin: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: solid 2px black;
+}
+
+.header{
+    display: block;
+    margin: auto;
+    animation: moveSlightly 2s infinite ease-in-out;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.head{
+    background-image: url('images/header-bg.png');
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px;
+}
+
+
+
+
+#box-subheader{
+    font-size: 30px;
+    font-style: italic;
+    background-image: url('images/cutebg.png');
+    border: dashed 2px rgb(192, 160, 179);
+}
+
+.top{
+    display: flex;
+    z-index: 2;
+    gap: 100px;
+    padding-top: 50px;
+    margin: 40px;
+
+}
+.lace{
+    position: absolute;
+    width: 350px;
+    height: 650px;
+    top: 265px;
+    left: 125px;
+    z-index: 1;
+
+}
+
+.card{
+    background: rgb(0, 0, 0);
+    border: solid 3px black;
+
+}
+
+.navbar{
+    font-size: 40px;
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    z-index: 3;
+    color: pink;
+    border-radius: 20px;
+}
+
+.welcome{
+    background-color: white;
+    display: flex;
+    max-height: 250px;
+    padding: 20px
+    
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    margin: 10px 0;
+    border: solid 2px pink;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: pink;
+    display: block;
+    padding: 7px;
+}
+ul li a:hover{
+    background-color: pink;
+    color: white;
+
+
+}
+
