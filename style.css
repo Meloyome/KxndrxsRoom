@@ -1,7 +1,6 @@
 body{
     font-family: 'Medodica';
     background-image: url('images/mainbackground.png');
-    min-width: 1200px;
     overflow-x: auto;
     background-size:cover;
     background-repeat:no-repeat;
@@ -493,6 +492,23 @@ ul li a:hover{
     
 }
 
+.title-bar-chat{
+    background:linear-gradient(180deg,
+        #afafaf 1%,
+        #707070 2%,
+        #dadada 90%
+    );
+
+    color:rgb(0, 0, 0); 
+    padding:6px 8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:bold;
+    font-size:20px;
+    padding-left: 10px;
+}
+
 /* Music playa*/
 
 .music-player{
@@ -590,8 +606,11 @@ ul li a:hover{
 
 @media screen and (max-width:768px){
 
-    .nav-window,
-    .window-chat{
+    .window{
+        max-width: 500px;
+    }
+
+    .nav-window{
         position:static;
 
         width:100%;
@@ -604,11 +623,16 @@ ul li a:hover{
         top:auto;
     }
 
+
     .mini-window2{
         display:none;
     }
 
-    .miku,
+    .page-divider4,
+    .page-divider3,
+    .title-bar-chat,
+    .chatbox,
+    .window-chat,
     .gato,
     .gengar,
     .tomo{
@@ -623,23 +647,89 @@ ul li a:hover{
     .sites{
         padding-bottom: 80px;
         margin-left: 400px;
+        height: 160px;
+        margin-bottom: 100px;
+        margin-left: 270px;
+        width: 200px;
     }
 
     .window-player{
         width:100%;
-        max-width:690px;
-
-        min-height:295px;
-
-        margin:20px auto;
-
+        max-width:450px;
+        height: 200px;
         overflow:hidden;
     }
-    .mini-window{
-        position: absolute;
-        left: 250px;
-        top: 1624px;
+
+    .music-player{
+        width: 449px;
+        height: 198px;
+        padding-top: 27px;
     }
 
+    .cover{
+        width: 129px;
+    }
+
+    .button1,
+    .button2,
+    .button3{
+        width: 54px;
+        top: 50px;
+    }
+
+    .controls{
+        left: 156px;
+        bottom: 27px;
+    }
+
+    #artist{
+        top: 35px;
+        left: 200px;
+    }
+
+    #title{
+        top: 66px;
+        left: 200px; 
+    }
+
+    .mini-window{
+        position: absolute;
+        left: 360px;
+        top: 1134px;
+        width: 250px;
+        height: 240px;
+    }
+
+    .mini1{
+        width: 240px;
+        height: 200px;
+    }
+
+    .welcome{
+        max-width: 420px;
+        height: 200px;
+        font-size: 15px;
+    }
+
+    #banana{
+        width: 200px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .header{
+        width: 340px;
+    }
+    
+    .page-divider{
+        width: 50px;
+    }
+
+    .miku{
+        position: absolute;
+        top: 530px;
+        left: 730px;
+        width: 150px;
+    }
 
 }
