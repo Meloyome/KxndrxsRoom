@@ -583,3 +583,63 @@ ul li a:hover{
     border: solid rgba(0, 0, 0, 0.11) 1px;
 
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media screen and (max-width:768px){
+
+    .nav-window,
+    .window-chat{
+        position:static;
+
+        width:100%;
+        max-width:400px;
+
+        margin:20px auto;
+
+        left:auto;
+        right:auto;
+        top:auto;
+    }
+
+    .mini-window2{
+        display:none;
+    }
+
+    .miku,
+    .gato,
+    .gengar,
+    .tomo{
+        display:none;
+    }
+
+    .bottom{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .sites{
+        padding-bottom: 80px;
+        margin-left: 400px;
+    }
+
+    .window-player{
+        width:100%;
+        max-width:690px;
+
+        min-height:295px;
+
+        margin:20px auto;
+
+        overflow:hidden;
+    }
+    .mini-window{
+        position: absolute;
+        left: 250px;
+        top: 1624px;
+    }
+
+
+}
